@@ -1,4 +1,6 @@
 ### clioptions
+[![Build Status](https://travis-ci.org/stpettersens/clioptions.png?branch=master)](https://travis-ci.org/stpettersens/clioptions)
+
 A very thin wrapper for command line arguments in Rust.
 
 Usage:
