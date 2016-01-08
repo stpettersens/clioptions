@@ -23,7 +23,7 @@ impl CliOptions {
         env::args().collect()
 	}
     
-    /// Get number fo command line arguments.
+    	/// Get number fo command line arguments.
     pub fn get_num(&self) -> usize {
         self.get_args().clone().len()
     }
