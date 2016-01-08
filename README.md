@@ -16,7 +16,7 @@ clioptions = { git = "https://github.com/stpettersens/clioptions.git" }
 fn main() {
     let cli = CliOptions::new("program_name");
     let program = cli.get_program();
-    let filename = String::new();
+    let mut filename = String::new();
     if cli.get_num() > 1 {
         for (i, a) in cli.get_args().iter().enumerate() {
 
