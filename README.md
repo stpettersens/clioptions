@@ -10,7 +10,7 @@ Usage:
 clioptions = { git = "https://github.com/stpettersens/clioptions.git" }
 ```
 
-- Add something like this to your source code.
+- Implement your command line arguments.
 
 ```rust
 fn main() {
