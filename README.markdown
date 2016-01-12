@@ -21,20 +21,14 @@ use clioptions::CliOptions;
 fn main() {
     let cli = CliOptions::new("program_name");
     let program = cli.get_program();
-    let args = cli.get_args();
     let mut filename = String::new();
     if cli.get_num() > 1 {
-        for (i, a) in args.iter().enumerate() {
-
-            if a == "-h" || a == "--help" {
-                display_usage(&program, 0);
-            }
-            else if a == "-v" || a == "--version" {
-                display_version();
-            }
-            
-            if f == "-f" || a == "--file" {
-                filename = cli.next_argument(i);
+        for (i, a) in cli.get_args().iter().enumerate() {
+            match a.trim() {
+                "-h" | "--help" => display_usage(&program, 0),
+                "-v" | "--version" => display_version(),
+                "-f" | "--file" => cli.next_argument(i), // next_argument(i) gets the argument after i.
+                _ => continue,
             }
         }
     }
