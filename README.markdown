@@ -19,7 +19,7 @@ extern crate clioptions;
 use clioptions::CliOptions;
 
 fn main() {
-    let cli = CliOptions::new("program_name");
+    let cli = CliOptions::new("program_name"); // "program_name" is the fallback for argv[0].
     let program = cli.get_program();
     let mut filename = String::new();
     if cli.get_num() > 1 {
@@ -27,10 +27,13 @@ fn main() {
             match a.trim() {
                 "-h" | "--help" => display_usage(&program, 0),
                 "-v" | "--version" => display_version(),
-                "-f" | "--file" => cli.next_argument(i), // next_argument(i) gets the argument after i.
+                "-f" | "--file" => filename = cli.next_argument(i), // next_argument(i) gets the argument after i.
                 _ => continue,
             }
         }
+    }
+    if(!filename.is_empty()) {
+        do_something_with_filename(&filename);
     }
 }
 ```
