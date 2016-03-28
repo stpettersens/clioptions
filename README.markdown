@@ -27,7 +27,8 @@ fn main() {
             match a.trim() {
                 "-h" | "--help" => display_usage(&program, 0),
                 "-v" | "--version" => display_version(),
-                "-f" | "--file" => filename = cli.next_argument(i), // next_argument(i) gets the argument after i.
+                "-f" | "--file" => filename = cli.next_argument(i), 
+                // next_argument(i) gets the argument after i.
                 _ => continue,
             }
         }
