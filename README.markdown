@@ -1,9 +1,9 @@
 ### clioptions
 [![Build Status](https://travis-ci.org/stpettersens/clioptions.png?branch=master)](https://travis-ci.org/stpettersens/clioptions)
 
-> A very thin wrapper for command line arguments in Rust.
+> :heavy_dollar_sign: A very thin wrapper for command line arguments in Rust.
 
-Usage:
+##### Usage:
 
 - Add this to your `Cargo.toml` file.
 
