@@ -1,7 +1,4 @@
-/*
-    A very thin wrapper for command line arguments in Rust.
-    Author: Sam Saint-Pettersen.
-*/
+//! A very thin wrapper for command line arguments in Rust.
 
 use std::env;
 
@@ -23,7 +20,7 @@ impl CliOptions {
         env::args().collect()
     }
     
-        /// Get number fo command line arguments.
+    /// Get number fo command line arguments.
     pub fn get_num(&self) -> usize {
         self.get_args().clone().len()
     }
