@@ -12,7 +12,10 @@
 
 ```toml
 [dependencies]
-clioptions = { git = "https://github.com/stpettersens/clioptions.git" }
+clioptions = "0.1.0"
+
+# or from Github: 
+# clioptions = { git = "https://github.com/stpettersens/clioptions.git" }
 ```
 
 - Implement your command line arguments.
