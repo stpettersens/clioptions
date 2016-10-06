@@ -4,6 +4,7 @@
 
 [![Build Status](https://travis-ci.org/stpettersens/clioptions.png?branch=master)](https://travis-ci.org/stpettersens/clioptions)
 [![Build status](https://ci.appveyor.com/api/projects/status/04vxn0sjoi3ufev6?svg=true)](https://ci.appveyor.com/project/stpettersens/clioptions)
+[![Crates.io](https://img.shields.io/crates/v/clioptions.svg)](https://crates.io/crates/clioptions)
 
 ##### Usage:
 
