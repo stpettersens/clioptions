@@ -1,7 +1,9 @@
 ### clioptions
-[![Build Status](https://travis-ci.org/stpettersens/clioptions.png?branch=master)](https://travis-ci.org/stpettersens/clioptions)
 
 > :heavy_dollar_sign: A very thin wrapper for command line arguments in Rust.
+
+[![Build Status](https://travis-ci.org/stpettersens/clioptions.png?branch=master)](https://travis-ci.org/stpettersens/clioptions)
+[![Build status](https://ci.appveyor.com/api/projects/status/04vxn0sjoi3ufev6?svg=true)](https://ci.appveyor.com/project/stpettersens/clioptions)
 
 ##### Usage:
 
