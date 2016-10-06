@@ -14,7 +14,7 @@
 [dependencies]
 clioptions = "0.1.0"
 
-# or from Github: 
+# or from GitHub: 
 # clioptions = { git = "https://github.com/stpettersens/clioptions.git" }
 ```
 
